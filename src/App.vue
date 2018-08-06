@@ -1,17 +1,9 @@
 <template>
-  <div id="app" class="bg-grey-lighter min-h-screen font-sans">
-    <div class="container mx-auto">
-      <header class="flex justify-end">
-        <nav class="py-10">
-          <ul class="list-reset flex">
-            <li class="mr-4"><a href="" class="no-underline text-grey-dark uppercase block">Home</a></li>
-            <li><a href="" class="no-underline text-grey-dark uppercase block">Home</a></li>
-          </ul>
-        </nav>
-      </header>
+  <div id="app" class="bg-grey-lightest min-h-screen font-sans flex flex-col">
+    <header class="bg-indigo p-10">
+    </header>
 
-      <router-view/>
-    </div>
+    <router-view/>
   </div>
 </template>
 
