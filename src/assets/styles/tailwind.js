@@ -42,7 +42,7 @@ View the full documentation at https://tailwindcss.com.
 | "secondary", or even a numeric scale like "100" and "200", go for it.
 |
 */
-
+// #115EFB #4282F8
 let colors = {
   'transparent': 'transparent',
 
@@ -99,8 +99,8 @@ let colors = {
   'blue-darkest': '#12283a',
   'blue-darker': '#1c3d5a',
   'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
+  'blue': '#00baf2',
+  'blue-light': '#00d7ff',
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
 
@@ -112,9 +112,9 @@ let colors = {
   'indigo-lighter': '#b2b7ff',
   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
+  'purple-darkest': '#00004f',
+  'purple-darker': '#37245b',
+  'purple-dark': '#585c90',
   'purple': '#9561e2',
   'purple-light': '#a779e9',
   'purple-lighter': '#d6bbfc',

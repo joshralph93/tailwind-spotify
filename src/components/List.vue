@@ -40,7 +40,7 @@
                         <div class="flex-1">
                             15m
                         </div>
-                        <button class="bg-green-light text-white px-6 py-4 rounded">Book Now</button>
+                        <button class="bg-blue text-white px-6 py-4 rounded">Book Now</button>
                     </div>
                 </div>
             </div>

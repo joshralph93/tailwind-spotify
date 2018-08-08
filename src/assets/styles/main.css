@@ -60,3 +60,6 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+.bg-gradient-primary {
+    background: linear-gradient(to top right, #115EFB, #4282F8)
+}
