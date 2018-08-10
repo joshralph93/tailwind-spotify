@@ -46,14 +46,14 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7', //#F7F8FB
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#F7F8FB',
+  'black': '#121212',
+  'grey-darkest': '#181818',
+  'grey-darker': '#282828',
+  'grey-dark': '#424242',
+  'grey': '#b3b3b3',
+  'grey-light': '#bcbcbc',
+  'grey-lighter': '#d7d8d6',
+  'grey-lightest': '#e9e9e9',
   'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
@@ -83,7 +83,7 @@ let colors = {
   'green-darkest': '#0f2f21',
   'green-darker': '#1a4731',
   'green-dark': '#1f9d55',
-  'green': '#38c172',
+  'green': '#31e26b',
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
@@ -194,9 +194,10 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Muli',
+      // 'Muli',
       // 'Nunito Sans',
       // 'PT Sans',
+      // 'Montserrat',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
