@@ -3,7 +3,7 @@
     <div class="flex flex-1">
       <!-- Sidebar -->
       <!-- @todo - pretty scroll bar? -->
-      <div class="bg-black py-2 flex flex-col overflow-hidden" :style="{ width: sidebarWidth }">
+      <div class="bg-black pt-2 flex flex-col overflow-hidden" :style="{ width: sidebarWidth }">
         <div class="flex-1 overflow-auto -mr-4">
           <ul class="list-reset">
             <li class="py-1 my-3">
@@ -127,7 +127,156 @@
         </div>
         <!-- End Search Bar -->
 
+        <!-- CONTENT @todo - extrect -->
+        <div class="p-6">
+          <ul class="list-reset flex -mx-4 mb-5 mt-32">
+            <li class="group text-white uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Overview
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-100 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Podcasts
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Charts
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Genres &amp; Moods
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              New Releases
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Discover
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+            <li class="group hover:text-white text-grey-light uppercase text-xs tracking-wide mx-4 py-3 relative">
+              Concerts
+              <span class="w-1/2 border-b-2 border-green-dark m-auto absolute pin-b pin-l pin-r opacity-0 group-hover:opacity-100"></span>
+            </li>
+          </ul>
+
+          <div class="mb-20">
+            <div class="border-b border-grey-darker py-3 flex items-center mb-4">
+              <div class="flex-1">
+                <h4 class="text-white">Your perfect evening...</h4>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block mr-2" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill="currentColor">
+                      <polygon points="7.05025253 9.29289322 6.34314575 10 12 15.6568542 13.4142136 14.2426407 9.17157288 10 13.4142136 5.75735931 12 4.34314575"></polygon>
+                    </g>
+                  </g>
+                </svg>
+                <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill="currentColor">
+                      <polygon points="12.9497475 10.7071068 13.6568542 10 8 4.34314575 6.58578644 5.75735931 10.8284271 10 6.58578644 14.2426407 8 15.6568542 12.9497475 10.7071068"></polygon>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="flex -mx-2">
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2 bg-cover bg-center h-32 p-32" style=" background-image: url('https://i.scdn.co/image/4ddf4734de3d60fda560fbab66dfd9f8cc9f36a7')"></div>
+                <p class="text-white text-sm mb-2">Chilled Sexy R&amp;B</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2 bg-cover bg-center py-32 h-32" style="background-image: url('https://i.scdn.co/image/3b7e8199da16b8d83cd2323a3abd8b700248aea8')"></div>
+                <p class="text-white text-sm mb-2">Songs to Sing in the Shower</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2 bg-cover bg-center py-32 h-32" style="background-image: url('https://contentpl-a.akamaihd.net/images/playlists/image/medium/f45cc73d2261a37dd2da0a5f1d783f0b.jpg')"></div>
+                <p class="text-white text-sm mb-2">Discover Weekly</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2 bg-cover bg-center py-32 h-32" style="background-image: url('https://e.snmc.io/lk/f/l/b172fdaabff07f09de61b2ef7ce5a925/1228762.jpg')"></div>
+                <p class="text-white text-sm mb-2">Live Covers</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20">
+            <div class="border-b border-grey-darker py-3 flex items-center mb-4">
+              <div class="flex-1">
+                <h4 class="text-white">Your perfect evening...</h4>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block mr-2" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill="currentColor">
+                      <polygon points="7.05025253 9.29289322 6.34314575 10 12 15.6568542 13.4142136 14.2426407 9.17157288 10 13.4142136 5.75735931 12 4.34314575"></polygon>
+                    </g>
+                  </g>
+                </svg>
+                <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g fill="currentColor">
+                      <polygon points="12.9497475 10.7071068 13.6568542 10 8 4.34314575 6.58578644 5.75735931 10.8284271 10 6.58578644 14.2426407 8 15.6568542 12.9497475 10.7071068"></polygon>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="flex -mx-2">
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2" style="height: 270px;"></div>
+                <p class="text-white text-sm mb-2">Slow Jamz</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2" style="height: 270px;"></div>
+                <p class="text-white text-sm mb-2">Slow Jamz</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2" style="height: 270px;"></div>
+                <p class="text-white text-sm mb-2">Slow Jamz</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+              <div class="w-1/4 mx-2">
+                <div class="w-full bg-grey-dark mb-2" style="height: 270px;"></div>
+                <p class="text-white text-sm mb-2">Slow Jamz</p>
+                <p class="text-grey text-xs mb-2">
+                  Dim the lights and chill with this selection of classic slow jamz with a few modern jamz thrown in...
+                </p>
+                <p class="text-grey-light uppercase text-xs tracking-wide">150,293 Followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <router-view/>
+        <!-- END CONTENT -->
       </div>
       <!-- End Mid Section -->
 
