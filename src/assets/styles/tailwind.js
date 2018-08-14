@@ -96,13 +96,13 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#00baf2',
-  'blue-light': '#00d7ff',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  // 'blue-darkest': '#12283a',
+  // 'blue-darker': '#1c3d5a',
+  // 'blue-dark': '#2779bd',
+  'blue': '#4a89d3',
+  // 'blue-light': '#00d7ff',
+  // 'blue-lighter': '#bcdefa',
+  // 'blue-lightest': '#eff8ff',
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',
@@ -753,13 +753,11 @@ module.exports = {
 
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    'md': '0 4px 8px 0 rgba(0,0,0,0.8), 0 2px 4px 0 rgba(0,0,0,0.1)',
+    'lg': '0 15px 30px 0 rgba(0,0,0,0.8), 0 5px 15px 0 rgba(0,0,0,0.1)',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',
-    'sidebar': '15px 0 30px 0 rgba(0, 0, 0, 0.02), 0 0 15px 0 rgba(0, 0, 0, 0)',
-    'light': '0 0 30px 0 rgba(0, 0, 0, .05), 0 0 15px 0 rgba(0, 0, 0, 0)',
   },
 
 

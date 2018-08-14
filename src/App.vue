@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="bg-grey-darkest min-h-screen h-screen overflow-hidden font-sans flex flex-col">
     <div class="flex flex-1">
+      <!-- Sidebar -->
       <!-- @todo - pretty scroll bar? -->
       <div class="bg-black py-2 flex flex-col overflow-hidden" :style="{ width: sidebarWidth }">
         <div class="flex-1 overflow-auto -mr-4">
@@ -55,8 +56,90 @@
           <img class="block" src="https://www.designformusic.com/wp-content/uploads/2015/10/insurgency-digital-album-cover-design.jpg" />
         </div>
       </div>
-      <router-view/>
+      <!-- End Sidebar -->
+
+      <!-- Mid section -->
+      <div class="flex-1 relative overflow-y-auto ">
+        <!-- Search Bar -->
+        <div class="flex items-center sticky pin-t py-3 px-6 w-full bg-black">
+          <div class="flex">
+            <div class="flex items-center mr-4">
+              <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block mr-2" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g fill="currentColor">
+                    <polygon points="7.05025253 9.29289322 6.34314575 10 12 15.6568542 13.4142136 14.2426407 9.17157288 10 13.4142136 5.75735931 12 4.34314575"></polygon>
+                  </g>
+                </g>
+              </svg>
+              <svg class="w-6 h-6 fill-current text-grey hover:text-grey-lightest inline-block" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g fill="currentColor">
+                    <polygon points="12.9497475 10.7071068 13.6568542 10 8 4.34314575 6.58578644 5.75735931 10.8284271 10 6.58578644 14.2426407 8 15.6568542 12.9497475 10.7071068"></polygon>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="bg-white rounded-full px-2 flex items-center overflow-hidden">
+              <svg class="w-3 h-3 fill-current text-black block mr-2" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="search" fill="#000000">
+                    <path d="M11.1921711,12.6063847 C10.0235906,13.4815965 8.5723351,14 7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,8.5723351 13.4815965,10.0235906 12.6063847,11.1921711 L14.0162265,12.6020129 C14.6819842,12.4223519 15.4217116,12.5932845 15.9484049,13.1199778 L18.7795171,15.95109 C19.5598243,16.7313971 19.5646685,17.9916807 18.7781746,18.7781746 C17.997126,19.5592232 16.736965,19.5653921 15.95109,18.7795171 L13.1199778,15.9484049 C12.5960188,15.4244459 12.4217025,14.6840739 12.6018353,14.0160489 L11.1921711,12.6063847 Z M7,12 C9.76142375,12 12,9.76142375 12,7 C12,4.23857625 9.76142375,2 7,2 C4.23857625,2 2,4.23857625 2,7 C2,9.76142375 4.23857625,12 7,12 Z" id="Combined-Shape"></path>
+                  </g>
+                </g>
+              </svg>
+              <input type="text" class="py-1 text-sm text-black" placeholder="Search"/>
+            </div>
+          </div>
+          <div class="flex justify-end flex-1">
+            <div class="flex items-center text-white relative">
+              <svg class="w-4 h-4 fill-current block mr-3" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="mood-happy" fill="currentColor">
+                    <path d="M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z M10,18 C14.418278,18 18,14.418278 18,10 C18,5.581722 14.418278,2 10,2 C5.581722,2 2,5.581722 2,10 C2,14.418278 5.581722,18 10,18 Z M6.5,9 C7.32842712,9 8,8.32842712 8,7.5 C8,6.67157288 7.32842712,6 6.5,6 C5.67157288,6 5,6.67157288 5,7.5 C5,8.32842712 5.67157288,9 6.5,9 Z M13.5,9 C14.3284271,9 15,8.32842712 15,7.5 C15,6.67157288 14.3284271,6 13.5,6 C12.6715729,6 12,6.67157288 12,7.5 C12,8.32842712 12.6715729,9 13.5,9 Z M15.6585886,12 C14.8349158,14.3303847 12.6124377,16 10,16 C7.38756235,16 5.16508423,14.3303847 4.34141142,12 L15.6585886,12 L15.6585886,12 Z" id="Combined-Shape"></path>
+                  </g>
+                </g>
+              </svg>
+              <span class="font-light text-sm">joshralph93</span>
+              <div class="relative">
+                <span class="absolute pin-t pin-r rounded-full w-2 h-2 mt-1 bg-blue"></span>
+                <svg class="w-6 h-6 fill-current block ml-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="cheveron-down" fill="currentColor">
+                      <polygon id="Combined-Shape" points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8"></polygon>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="absolute pin-r pin-t-full bg-grey-darker rounded-lg shadow-md overflow-hidden mt-3 hidden">
+                <!-- @todo - figure arrow -->
+                <!--<span class="border-l-5 border-r-5 border-b-5 border-solid border-b-grey-darker"></span>-->
+                <ul class="list-reset">
+                  <li><a href="" class="px-6 py-3 block text-grey-light whitespace-no-wrap no-underline text-sm">Private Session</a></li>
+                  <li><a href="" class="px-6 py-3 block text-grey-light whitespace-no-wrap no-underline text-sm">Account</a></li>
+                  <li><a href="" class="px-6 py-3 block text-grey-light whitespace-no-wrap no-underline text-sm">Settings</a></li>
+                  <li><a href="" class="px-6 py-3 block text-grey-light whitespace-no-wrap no-underline text-sm bg-blue text-white">Update available. Restart now.</a></li>
+                  <li><a href="" class="px-6 py-3 block text-grey-light whitespace-no-wrap no-underline text-sm">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Search Bar -->
+
+        <router-view/>
+      </div>
+      <!-- End Mid Section -->
+
+      <!-- Right Sidebar -->
+      <div style="width: 260px" class="bg-black">
+
+      </div>
+      <!-- End Right Sidebar -->
+
     </div>
+
+    <!-- Player & Controls -->
     <div class="py-4 px-4 bg-grey-darker flex items-center">
       <div class="w-1/4">
         <p class="text-white mb-2 font-light text-sm">
@@ -106,15 +189,18 @@
 <script>
 export default {
   name: 'App',
-    data() {
-      return {
-        sidebarWidth: '200px'
-      }
-    },
-    computed: {
-      playlists() {
-          return Array(12).fill().map((_, number) => `Playlist ${number+1}`)
-      }
+  data() {
+    return {
+      sidebarWidth: '200px'
+    }
+  },
+  computed: {
+    playlists() {
+        return Array(12).fill().map((_, number) => `Playlist ${number+1}`)
+    }
+  },
+    created() {
+
     }
 }
 </script>
