@@ -100,7 +100,7 @@
                 </g>
               </svg>
               <span class="font-light text-sm">joshralph93</span>
-              <div class="relative">
+              <div class="relative cursor-pointer" @click="showUserDropdown = !showUserDropdown">
                 <span class="absolute pin-t pin-r rounded-full w-2 h-2 mt-1 bg-blue"></span>
                 <svg class="w-6 h-6 fill-current block ml-5" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -111,7 +111,7 @@
                 </svg>
               </div>
 
-              <div class="absolute pin-r pin-t-full bg-grey-darker rounded-lg shadow-md overflow-hidden mt-3 hidden">
+              <div class="absolute pin-r pin-t-full bg-grey-darker rounded-lg shadow-md overflow-hidden mt-3" :class="{hidden: !showUserDropdown}">
                 <!-- @todo - figure arrow -->
                 <!--<span class="border-l-5 border-r-5 border-b-5 border-solid border-b-grey-darker"></span>-->
                 <ul class="list-reset">
@@ -336,11 +336,15 @@
 </template>
 
 <script>
+/**
+ * Anything implemented here currently is done so to facilitate styling. will likely all be moved.
+ */
 export default {
   name: 'App',
   data() {
     return {
-      sidebarWidth: '200px'
+      sidebarWidth: '200px',
+        showUserDropdown: false
     }
   },
   computed: {
@@ -348,9 +352,9 @@ export default {
         return Array(12).fill().map((_, number) => `Playlist ${number+1}`)
     }
   },
-    created() {
+  created() {
 
-    }
+  }
 }
 </script>
 
