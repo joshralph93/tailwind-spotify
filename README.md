@@ -6,6 +6,8 @@ In time, I will add some behaviour and API interactions using [VueJS](https://vu
 
 ![Screenshot](.github/screenshots/spotify3.png)
 
+At this stage, everything is in [App.vue](src/App.vue), so that'd be a good place to start if you're looking for code!
+
 ## Follow Along
 
 If you'd like to follow along with this project, and receive free access to videos and live streams, check out and sign up at [https://spotifly.launchaco.com/](https://spotifly.launchaco.com/)
